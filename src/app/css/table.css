@@ -1,0 +1,43 @@
+.ecommerce-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .product-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .product-table th,
+  .product-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /*Heading Portion*/
+  .product-table th {
+    background-color: #ff7b00;
+  }
+  
+  .product-table tbody tr:hover {
+    background-color: #808080;
+  }
+  
+  .product-table td:first-child {
+    font-weight: bold;
+  }
+  
+  /* Price color */
+  .product-table td:nth-child(2) {
+    font-weight: bold;
+    color: #fc0000; 
+  }
+  
