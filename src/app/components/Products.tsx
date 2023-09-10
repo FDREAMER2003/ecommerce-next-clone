@@ -35,26 +35,21 @@ const Products = () => {
 
     return (
       <div className="ecommerce-container">
-        <h1 className="product-title">Product Details</h1>
-        <table className="product-table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            {getAllProducts.map((product: any) => (
-              <tr key={product.id}>
-                <td>{product.title}</td>
-                <td>${product.price.toFixed(2)}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <h1 className="product-title">Products Available</h1>
+        <div className="product-row">
+          {getAllProducts.map((product: any) => (
+            <div className="product-card" key={product.id}>
+              <img src={product.thumbnail} alt={product.title} />
+              <h3>{product.title}</h3>
+              <p className="product-price">${product.price.toFixed(2)}</p>
+              <p className="product-description">{product.description}</p>
+              <button className="buy-button">Buy Now</button>
+            </div>
+          ))}
+        </div>
       </div>
     );
-       
+    
 }
 
 export default Products
